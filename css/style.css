@@ -1,0 +1,344 @@
+/*******************************
+Common css 
+*******************************/
+:root{
+    --txt-color:#ffffff;
+    --psedo-color:#E65F78;
+    --title-color:#000000;
+    --para-color:#6C757D;
+}
+.title{
+    margin-bottom: 100px;
+}
+.title h1{
+    font-size: 35px;
+    font-weight: 400;
+    color: var(--title-color);
+}
+.title h1 span{
+    font-weight: 500;
+}
+.title p{
+    color: var(--para-color);
+    padding: 0 45px;
+}
+.kerri-btn{
+    font-size: 18px;
+    font-weight: 500;
+    color: #fff;
+    display: inline-block;
+    padding: 12px 35px;
+    background-color: var(--psedo-color);
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 5px;
+    transition: 0.3s ease-in-out;
+}
+.kerri-btn:hover{
+    color: var(--title-color);
+    border-radius:0 10px 0 10px;
+}
+/*******************************
+Header css 
+*******************************/
+.header{
+    position: absolute;
+    top:0;
+    left: 0;
+    right: 0;
+    z-index: 999!important;
+    padding: 25px 0!important;
+}
+.kerri-nav li a{
+    color: var(--txt-color)!important;
+    display: inline-block;
+    padding: 0 20px!important;
+}
+.kerri-nav li a:hover{
+    color: var(--psedo-color)!important;
+}
+.kerri-nav li a.active{
+    color: var(--psedo-color)!important;
+}
+.kerri-nav li:last-child a{
+    padding-right: 0!important;
+}
+
+/*******************************
+Banner css 
+*******************************/
+.banner{
+    background-image: url('../images/header-bg.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+    clip-path: polygon(50% 0%, 100% 0, 100% 85%, 50% 100%, 50% 100%, 0 85%, 0 0);
+}
+.banner:after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,0.69);
+    z-index: 0!important;
+}
+.banner-content{
+    color: var(--txt-color)!important;
+    z-index: 111!important;
+}
+.banner-content h3{
+    font-size: 35px;
+    font-weight: 400;
+}
+.banner-content h1{
+    font-size: 55px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin:20px 0;
+}
+.banner-content p{
+    padding: 0 320px;
+}
+.banner-content a{
+    font-size: 18px;
+    color:var(--txt-color)!important;
+    text-decoration:none;
+    text-transform: uppercase;
+    display: inline-block;
+    border:1px solid #ffffff;
+    padding: 15px 30px;
+    border-radius: 50px;
+    margin-top: 30px;
+    transition: 0.3s ease-in-out;
+}
+.banner-content a:hover{
+    background-color: #ffffff!important;
+    color: black!important;
+}
+
+/*******************************
+Banner css 
+*******************************/
+.about{
+    padding: 100px 0;
+}
+.about-content h1{
+    font-size: 40px;
+    font-weight: 700;
+    color: var(--title-color)!important;
+    text-transform: capitalize;
+}
+.about-content h1 span{
+    font-weight: 400;
+}
+.about-content h4{
+    font-size: 25px;
+    font-weight: 400;
+    color: var(--title-color);
+    margin: 20px 0;
+}
+.about-content h4 span{
+    font-weight: 700;
+    color:var(--psedo-color);
+}
+.about-content p{
+    color: var(--para-color);
+}
+.about-content .social li{
+    width: 40px;
+    height: 40px;
+    border:1px solid var(--para-color);
+    line-height: 40px;
+    text-align: center;
+    border-radius:50%;
+    transition: 0.3s ease-in-out;
+}
+.about-content .social a i{
+    color: var(--title-color);
+    display: inline-block;
+    transition: 0.3s ease-in-out;
+}
+.about-content .social li:hover{
+    border:1px solid var(--psedo-color);
+}
+.about-content .social li:hover i{
+    color: var(--psedo-color);
+}
+
+/*******************************
+Services css 
+*******************************/
+.service{
+    padding: 100px 0;
+    background-color: rgb(237, 237, 237);
+}
+.service-signle{
+    border:0.5px solid #ddd;
+    padding: 25px;
+    border-radius: 5px;
+    margin-bottom: 25px;
+}.service-signle:hover h3:after{
+    left: 35%;
+    right: 35%;
+}
+.service-signle i{
+    font-size: 40px;
+    color: var(--psedo-color);
+    margin-bottom: 20px;
+}
+.service-signle h3{
+    font-size: 22px;
+    margin-bottom: 30px;
+    position: relative;
+}
+.service-signle h3:after{
+    content: '';
+    position: absolute;
+    height: 2px;
+    top: 150%;
+    left: 40%;
+    right: 40%;
+    background-color: var(--psedo-color);
+    transition: 0.3s ease-in-out;
+}
+.service-signle p{
+    color: var(--para-color);
+}
+
+/*******************************
+Banner css 
+*******************************/
+.hire-me{
+    padding: 100px 0;
+}
+.hire-me-content h1{
+    font-size: 35px;
+    font-weight: 500;
+    color: var(--title-color);
+}
+
+/*******************************
+Works css 
+*******************************/
+.work{
+    padding: 100px 0;
+}
+.work-tabs{
+    margin-bottom: 50px;
+}
+.work-tabs li{
+    font-weight: 400;
+    color: var(--title-color);
+    text-transform: uppercase;
+    cursor: pointer;
+    display: inline-block;
+    padding: 3px 10px;
+    transition: 0.3s;
+}
+.work-tabs li.active{
+    color: var(--txt-color);
+    border-radius:15px;
+    background-color: var(--psedo-color);
+}
+.work-tabs li:hover{
+    color: var(--txt-color);
+    border-radius:15px;
+    background-color: var(--psedo-color);
+}
+.single-work{
+    border-radius: 5px;
+    margin-bottom: 20px;
+    border:1px solid #ddd;
+    position: relative;
+}
+.single-work:hover .work-overlay{
+   transform: scale(1);
+}
+.work-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    transform: scale(0);
+    background-color: rgba(0,0,0,0.69);
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+}
+.work-overlay span{
+    color: var(--txt-color);
+}
+.work-overlay p{
+    font-size: 18px;
+    text-transform: uppercase;
+    color: var(--txt-color);
+}
+.single-work img{
+    border-radius:5px;
+}
+
+/*******************************
+Contact css 
+*******************************/
+.contact{
+    padding: 100px 0;
+}
+.single-contact i{
+    font-size: 40px;
+    color: var(--psedo-color);
+    margin-bottom: 10px;
+}
+.single-contact h3{
+    font-size: 22px;
+}
+.single-contact p{
+    font-size: 18px;
+    color: var(--para-color);
+}
+.contact-from input:focus{
+    box-shadow: none;
+    border:1.5px solid var(--psedo-color);
+}
+.contact-from textarea:focus{
+    box-shadow: none;
+    border:1.5px solid var(--psedo-color);  
+}
+
+/*******************************
+Footer css 
+*******************************/
+.footer{
+    padding: 80px 0;
+    background-color: #1E1E1E;
+}
+
+.footer-social li{
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    background-color: var(--para-color);
+    text-align: center;
+    border-radius:50%;
+    transition: 0.3s ease-in-out;
+}
+.footer-social li i{
+    color: #A1A1A1;
+    transition: 0.3s;
+}
+.footer-social li:hover i{
+    color: var(--psedo-color);
+}
+.footer p{
+    font-size: 18px;
+    color: var(--txt-color);
+}
+
